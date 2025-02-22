@@ -3,7 +3,7 @@ name: Daily House Plans Scraper
 on:
   schedule:
     - cron: '0 0 * * *'  # Runs daily at midnight UTC
-  workflow_dispatch:  # Allows manual runs
+  workflow_dispatch:  # 👈 Properly indented for manual runs
 
 jobs:
   scrape_and_update:
@@ -16,6 +16,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
+
 
       - name: Install Dependencies
         run: pip install requests beautifulsoup4 gitpython
