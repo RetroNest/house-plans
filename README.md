@@ -5,11 +5,13 @@ This repository now contains a static, client-previewable website prototype for 
 
 ## Public customer preview link
 
-After this branch is merged to `main`, GitHub Pages will publish the site at:
+Use this clickable GitHub Pages link for customer previews:
 
 [https://retronest.github.io/house-plans/](https://retronest.github.io/house-plans/)
 
-You can send that clickable link directly to your customer. If the repository is under a different GitHub account, use this same pattern instead: `https://<github-username>.github.io/house-plans/`.
+If you see a `404`, the Pages deployment has not finished yet. This repository now deploys on every branch push and can also be deployed manually from **Actions → Deploy customer preview site → Run workflow**. Once that workflow completes, the same link above will load the site.
+
+If the repository is under a different GitHub account, use this same pattern instead: `https://<github-username>.github.io/house-plans/`.
 
 ## Preview locally
 
