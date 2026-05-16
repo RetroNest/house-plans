@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chez Sidney Catering is a boutique catering company serving weddings, corporate events, private dinners, and celebrations with custom menus, instant quote estimates, and local event planning support.">
+  <meta name="keywords" content="local catering, wedding catering, corporate catering, private chef, event catering, Chez Sidney Catering">
+  <meta property="og:title" content="Chez Sidney Catering | Local Event Catering & Custom Menus">
+  <meta property="og:description" content="Preview menus, estimate event pricing, check availability, and request a catering quote from Chez Sidney Catering.">
+  <meta property="og:type" content="website">
+  <title>Chez Sidney Catering | Local Event Catering & Instant Quotes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CateringService",
+      "name": "Chez Sidney Catering",
+      "description": "Boutique catering for weddings, corporate events, private dinners, and community celebrations.",
+      "telephone": "+1-555-014-2637",
+      "email": "hello@chezsidneycatering.com",
+      "priceRange": "$$$",
+      "areaServed": ["Local weddings", "Corporate events", "Private dinners"],
+      "servesCuisine": ["Seasonal American", "Coastal", "Brunch", "Custom menus"],
+      "url": "https://chezsidneycatering.example"
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Chez Sidney Catering home">
+        <span class="brand-mark">CS</span>
+        <span>Chez Sidney Catering</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#quote">Quote</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#inquiry">Inquiry</a></li>
+        <li><a href="#admin">Admin</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Local catering operations preview</p>
+        <h1>Menus, pricing, quotes, leads, and follow-up in one client-ready website.</h1>
+        <p class="hero-text">A mobile-friendly Chez Sidney Catering experience with live package management, event-size pricing logic, intake storage, availability handling, printable quote PDFs, calendar holds, and lead follow-up tools.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#quote">Build a quote</a>
+          <a class="button button-secondary" href="#preview">Preview features</a>
+        </div>
+      </div>
+      <aside class="hero-dashboard" aria-label="Operational highlights">
+        <div class="dashboard-stat">
+          <strong id="package-count">3</strong>
+          <span>editable packages</span>
+        </div>
+        <div class="dashboard-stat">
+          <strong id="lead-count">0</strong>
+          <span>stored inquiries</span>
+        </div>
+        <div class="dashboard-stat">
+          <strong>PDF</strong>
+          <span>print-ready quotes</span>
+        </div>
+        <div class="hero-food-card">
+          <p>Today’s featured menu</p>
+          <h2 id="featured-package-name">Seasonal Chef’s Table</h2>
+          <span id="featured-package-price">From $72 per guest</span>
+        </div>
+      </aside>
+    </section>
+  </header>
+
+  <main>
+    <section class="section preview-grid" id="preview" aria-labelledby="preview-title">
+      <div class="section-heading wide">
+        <p class="eyebrow">Built for customer demos</p>
+        <h2 id="preview-title">Preview the complete catering workflow without a backend.</h2>
+        <p>This prototype uses browser storage as a demo database, generates downloadable exports, and includes handoff notes for production integrations like CRM, email, calendar, and payments.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span>🧾</span><h3>Quote generation</h3><p>Pricing is calculated from package, guest count, service style, staffing, travel, rush timing, and add-ons.</p></article>
+        <article class="feature-card"><span>📅</span><h3>Availability handling</h3><p>Requested dates are checked against blackout dates and lead-time rules before submission.</p></article>
+        <article class="feature-card"><span>📬</span><h3>Lead automation</h3><p>Each lead gets a follow-up plan, mailto templates, CSV export, and calendar hold download.</p></article>
+        <article class="feature-card"><span>🛡️</span><h3>Security basics</h3><p>Honeypot and math challenge anti-spam fields are paired with safe DOM rendering patterns.</p></article>
+      </div>
+    </section>
+
+    <section class="section packages" id="packages" aria-labelledby="packages-title">
+      <div class="section-heading">
+        <p class="eyebrow">Menu package management</p>
+        <h2 id="packages-title">Customer-facing packages pulled from editable data.</h2>
+      </div>
+      <div class="package-grid" id="package-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section quote-section" id="quote" aria-labelledby="quote-title">
+      <div class="quote-copy">
+        <p class="eyebrow">Conditional pricing calculator</p>
+        <h2 id="quote-title">Estimate the event, then turn it into a lead and PDF quote.</h2>
+        <p>Choose package, guest count, service style, event date, add-ons, and dietary needs. The calculator applies minimums, rush fees, staffing, service, delivery, and tax logic.</p>
+      </div>
+
+      <div class="quote-app">
+        <form class="quote-form" id="quote-form" aria-label="Instant catering quote calculator">
+          <div class="form-row two">
+            <label>Package
+              <select name="packageId" id="package-select"></select>
+            </label>
+            <label>Service style
+              <select name="serviceStyle" id="service-style">
+                <option value="dropoff">Drop-off buffet</option>
+                <option value="buffet">Staffed buffet</option>
+                <option value="family">Family-style service</option>
+                <option value="plated">Plated dinner</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-row three">
+            <label>Guests
+              <input type="number" name="guestCount" id="guest-count" min="10" max="600" value="75" required>
+            </label>
+            <label>Event date
+              <input type="date" name="eventDate" id="event-date" required>
+            </label>
+            <label>Miles from kitchen
+              <input type="number" name="miles" id="event-miles" min="0" max="150" value="12">
+            </label>
+          </div>
+          <fieldset>
+            <legend>Add-ons</legend>
+            <label class="check"><input type="checkbox" name="addons" value="dessert"> Dessert display</label>
+            <label class="check"><input type="checkbox" name="addons" value="beverage"> Beverage station</label>
+            <label class="check"><input type="checkbox" name="addons" value="lateNight"> Late-night bites</label>
+            <label class="check"><input type="checkbox" name="addons" value="rentals"> Rentals coordination</label>
+          </fieldset>
+          <label>Dietary and service notes
+            <textarea name="notes" id="quote-notes" rows="3" placeholder="Vegetarian, gluten-free, allergy, venue load-in, or service notes"></textarea>
+          </label>
+          <div class="availability-message" id="availability-message" role="status"></div>
+        </form>
+
+        <aside class="quote-card" aria-label="Generated quote summary">
+          <div class="quote-card-header">
+            <p class="eyebrow">Estimate</p>
+            <strong id="quote-total">$0</strong>
+            <span id="quote-status">Ready to calculate</span>
+          </div>
+          <dl class="quote-lines" id="quote-lines"></dl>
+          <div class="quote-actions">
+            <button class="button button-primary" type="button" id="print-quote">Print / save PDF</button>
+            <button class="button button-secondary" type="button" id="download-quote">Download quote JSON</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <p class="eyebrow">Gallery and media management</p>
+        <h2 id="gallery-title">A curated event gallery the admin can update.</h2>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </section>
+
+    <section class="section inquiry-section" id="inquiry" aria-labelledby="inquiry-title">
+      <div class="contact-copy">
+        <p class="eyebrow">Inquiry intake + automation</p>
+        <h2 id="inquiry-title">Capture qualified leads and prepare follow-up instantly.</h2>
+        <p>Submissions are saved to the browser demo database, assigned a lead status, and connected to export, email, calendar, and CRM handoff actions.</p>
+        <div class="contact-details">
+          <a href="mailto:hello@chezsidneycatering.com">hello@chezsidneycatering.com</a>
+          <a href="tel:+15550142637">(555) 014-2637</a>
+        </div>
+      </div>
+      <form class="inquiry-form" id="inquiry-form" aria-label="Catering inquiry form">
+        <div class="form-row two">
+          <label>Name
+            <input type="text" name="name" autocomplete="name" placeholder="Your name" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          </label>
+        </div>
+        <div class="form-row two">
+          <label>Phone
+            <input type="tel" name="phone" autocomplete="tel" placeholder="(555) 555-5555">
+          </label>
+          <label>Event type
+            <select name="eventType">
+              <option>Wedding</option>
+              <option>Corporate event</option>
+              <option>Private dinner</option>
+              <option>Celebration</option>
+            </select>
+          </label>
+        </div>
+        <label>What should Chef Sidney know?
+          <textarea name="message" rows="4" placeholder="Venue, timing, preferences, budget, allergies, and anything else that matters"></textarea>
+        </label>
+        <div class="spam-row" aria-hidden="true">
+          <label>Leave this field empty
+            <input type="text" name="companyWebsite" tabindex="-1" autocomplete="off">
+          </label>
+        </div>
+        <label class="math-check" id="math-label">Anti-spam answer
+          <input type="number" name="mathAnswer" id="math-answer" required>
+        </label>
+        <button class="button button-primary" type="submit">Save inquiry and create follow-up</button>
+        <p class="form-note" id="form-note" role="status"></p>
+      </form>
+    </section>
+
+    <section class="section admin-section" id="admin" aria-labelledby="admin-title">
+      <div class="section-heading wide">
+        <p class="eyebrow">Admin editing capabilities</p>
+        <h2 id="admin-title">Manage packages, availability, media, leads, and operational exports.</h2>
+        <p>Use this no-login demo panel to prove the workflow. In production, these controls should sit behind authenticated admin access with a real database and server-side email/PDF services.</p>
+      </div>
+
+      <div class="admin-layout">
+        <article class="admin-card">
+          <h3>Add or update a package</h3>
+          <form id="package-form" class="compact-form">
+            <label>Package name<input name="name" placeholder="Harvest Supper" required></label>
+            <label>Price per guest<input name="price" type="number" min="1" value="68" required></label>
+            <label>Minimum guests<input name="minimum" type="number" min="1" value="25" required></label>
+            <label>Description<textarea name="description" rows="3" placeholder="Seasonal mains, sides, salad, dessert"></textarea></label>
+            <button class="button button-secondary" type="submit">Save package</button>
+          </form>
+        </article>
+
+        <article class="admin-card">
+          <h3>Availability calendar</h3>
+          <form id="blackout-form" class="compact-form inline-form">
+            <label>Blackout date<input name="blackoutDate" type="date" required></label>
+            <button class="button button-secondary" type="submit">Block date</button>
+          </form>
+          <div class="pill-list" id="blackout-list"></div>
+        </article>
+
+        <article class="admin-card">
+          <h3>Gallery media</h3>
+          <form id="gallery-form" class="compact-form">
+            <label>Image title<input name="title" placeholder="Garden grazing table" required></label>
+            <label>Image URL or data URL<input name="url" placeholder="https://..." required></label>
+            <button class="button button-secondary" type="submit">Add image</button>
+          </form>
+        </article>
+
+        <article class="admin-card lead-card">
+          <div class="lead-header">
+            <h3>Lead follow-up center</h3>
+            <button class="button button-secondary" type="button" id="export-leads">Export CRM CSV</button>
+          </div>
+          <div class="lead-list" id="lead-list"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section roadmap" aria-labelledby="roadmap-title">
+      <div>
+        <p class="eyebrow">Production handoff</p>
+        <h2 id="roadmap-title">What still needs backend services before launch.</h2>
+      </div>
+      <ul class="roadmap-list">
+        <li><strong>Database storage:</strong> replace localStorage with Postgres, Supabase, Firebase, or Airtable.</li>
+        <li><strong>Email workflows:</strong> connect SendGrid, Resend, Mailchimp, or HubSpot sequences.</li>
+        <li><strong>PDF generation:</strong> use a server renderer for branded quote PDFs and signed proposal URLs.</li>
+        <li><strong>CRM and calendar sync:</strong> wire exports to HubSpot/Salesforce and Google/Microsoft calendars.</li>
+        <li><strong>Security:</strong> add authentication, authorization, server-side validation, CAPTCHA, and audit logging.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Chez Sidney Catering. Crafted for delicious local events.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
